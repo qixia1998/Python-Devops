@@ -28,7 +28,7 @@ jobs:
       run: |
         pytest test.py
     - name: Check docker installed or not
-      run: docker hello-world
+      run: docker run hello-world
     - name: Push to docker Hub
       uses: docker/build-push-action@v3.0.0
       with: 
