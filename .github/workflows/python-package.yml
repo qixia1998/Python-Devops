@@ -30,9 +30,9 @@ jobs:
     - name: Check docker installed or not
       run: docker run hello-world
     - name: Push to docker Hub
-      uses: docker/build-push-action@v3.0.0
+      uses: docker/build-push-action@v1
       with: 
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: docker push qixia1998/todo-devops
+        repository: qixia1998/todo-devops
         tag_with_ref: true
